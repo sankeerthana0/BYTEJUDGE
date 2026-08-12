@@ -90,39 +90,22 @@ The platform securely executes untrusted candidate submissions inside isolated *
 
 ---
 
-## 🖼️ Application Screenshots & UI Interfaces
+## 🖼️ Application Screenshots & UI Proof of Work
 
 ### 1. Challenge Workspace & Multi-Language Editor
 > Interactive coding interface with problem constraints, multi-language editor, and live terminal evaluation output.
 
-```
-+----------------------------------------------------------------------------------------+
-| BYTEJUDGE  [Workspace]  [Docker Sandbox]  [Kafka Telemetry]  [REST API]  [Leaderboard] |
-+------------------------------------+---------------------------------------------------+
-| CHALLENGE DIRECTORY                | MULTI-LANGUAGE EDITOR (Java 17 | Python | C++)    |
-| • Two Sum (Easy)                   | class Solution {                                  |
-| • LRU Cache Architecture (Hard)    |   public int[] twoSum(int[] nums, int target) {   |
-| • Kafka Rate Limiter (Medium)      |       // ByteJudge Sandbox Runtime                |
-|                                    |   }                                               |
-| QUOTAS: 0.5 vCPU | 128MB | 1000ms  | }                                                 |
-|------------------------------------+---------------------------------------------------|
-| EVALUATION TERMINAL: ACCEPTED (AC) — Passed 5/5 Test Suites | 18 ms | 41.2 MB | worker-04 |
-+----------------------------------------------------------------------------------------+
-```
+![ByteJudge Workspace Screenshot](./src/assets/images/workspace_screenshot.jpg)
 
 ### 2. Docker Container Sandbox & Security Testbench
 > Real-time monitoring of 12 worker nodes with CGroup limits and attack fault-injection testing.
 
-```
-+----------------------------------------------------------------------------------------+
-| WORKER POOL (12 Isolated Nodes)    | SECURITY ABUSE TESTBENCH                          |
-| [worker-01] CPU: 12% | RAM: 48MB   | [ Trigger Infinite Loop (CPU Exhaustion) ]        |
-| [worker-02] CPU: 19% | RAM: 59MB   | [ Trigger OOM Overflow (Memory Exhaustion) ]      |
-| [worker-03] CPU: 26% | RAM: 70MB   | [ Trigger Forbidden Syscall (Seccomp Block) ]     |
-|------------------------------------+---------------------------------------------------|
-| SANBOX LOG: BLOCKED — OOM Killer triggered! Memory exceeded 128MB quota. Zero leak.|
-+----------------------------------------------------------------------------------------+
-```
+![ByteJudge Docker Sandbox Screenshot](./src/assets/images/sandbox_screenshot.jpg)
+
+### 3. Kafka Telemetry & JMeter Performance Dashboard
+> Live metrics tracking, 620+ submissions/min burst processing, and consumer partition distribution.
+
+![ByteJudge Telemetry Dashboard Screenshot](./src/assets/images/telemetry_screenshot.jpg)
 
 ---
 
