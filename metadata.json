@@ -1,0 +1,6 @@
+{
+  "name": "ByteJudge - Online Code Evaluation Platform",
+  "description": "Production-style competitive programming evaluation system with sandboxed execution, real-time metrics, testcase evaluation, and REST API analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
